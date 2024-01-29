@@ -17,6 +17,8 @@ namespace CodePulseAPI.Repositories.Implementation
         {
             await dbContext.Categories.AddAsync(category);
             await dbContext.SaveChangesAsync();
+
+            return category;
         }
     }
 }
